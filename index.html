@@ -26,6 +26,15 @@ Click me to display Date and Time.</button>
 
 <p id="demo"></p>
 
-    <p>I am so tired, it's already <strong>past</strong> 3am and I can't fall <strong>asleep</strong>!!!</p>
+    <script>
+    var currentDate = new Date();
+    var month = currentDate.getMonth();
+    var day = currentDate.getDate();
+    var year = currentDate.getFullYear();
+    var fullDate = month + "/" + day + "/" + year;
+    document.write(fullDate);
+    
+    </script>
+    
   </body>
 </html>
