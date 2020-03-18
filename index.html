@@ -19,20 +19,16 @@
           Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
           I hope you do enjoy them!
       </p>
-    
-      <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
 
     <script>
-    var currentDate = new Date();
-    var month = currentDate.getMonth();
-    var day = currentDate.getDate();
-    var year = currentDate.getFullYear();
-    var fullDate = month + "/" + day + "/" + year;
-    document.write(fullDate);
+      var currentDate = new Date();
+      var month = currentDate.getMonth();
+      var day = currentDate.getDate();
+      var year = currentDate.getFullYear();
+      var fullDate = month + "/" + day + "/" + year;
+      document.write(fullDate);
+      
+      document.write(Date());
     
     </script>
     
