@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Covid-19</title>
+  <html>
+    <head>
+      <title>Covid-19</title>
       <style>
-          #background {
-              opacity: 0.4;
-              width: 100%;
-              position: fixed;
-              top: 0px;
-              right: 0px;
-              z-index: -1;
-          }
-	#demo {	
-		background: green;
-		font-weight: bold;
-		font-variant-numeric: tabular-nums;
-		color: rgb(255, 36, 0);
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		border: 5px ridge rgb(128,0,128);
-		padding: 2px;
-		margin: 5px;
-          }            
+        #background {
+          opacity: 0.4;
+          width: 100%;
+          position: fixed;
+          top: 0px;
+          right: 0px;
+          z-index: -1;
+        }
+        #demo {	
+        background: green;
+        font-weight: bold;
+        font-variant-numeric: tabular-nums;
+        color: rgb(255, 36, 0);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 5px ridge rgb(128,0,128);
+        padding: 2px;
+        margin: 5px;
+        }            
       </style>
-  </head>
-  <body>
+    </head>
+
+    <body>
       <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/1-goldenpass-credit-goldenpass-ch-jpeg-1563509483.jpeg?resize=768:*" id="background" />
-      <p>
-          Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
-          I hope you do enjoy them!
-      </p>
 
-	<p id="demo"></p>
-	<script>
-var myVar = setInterval(myTimer, 1000);
+      <p>Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
+      I hope you do enjoy them!</p>
 
-function myTimer() {
-	var date = new Date()
-	var weekday = date.getDay()
-	var daysArray = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
-	var month = date.getMonth()
-	var monthsArray = new Array("January","February","March","April","May","June","July",
-	"August","September","October","November","December")
-	var day = date.getDate()
-	var year = date.getFullYear()
-  
-	document.getElementById("demo").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day + ', ' + ' ' + year + ', ' + date.toLocaleTimeString();
-	}
-</script>
+      <p id="demo"></p>
+      <script>
+        var myVar = setInterval(myTimer, 1000);
 
+        function myTimer() {
+          var date = new Date()
+          var weekday = date.getDay()
+          var daysArray = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday')
+          var month = date.getMonth()
+          var monthsArray = new Array("January","February","March","April","May","June","July",
+          "August","September","October","November","December")
+          var day = date.getDate()
+          var year = date.getFullYear()
 
-	<body>
-</html>
+          document.getElementById("demo").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day + ', ' + ' ' + year + ', ' + date.toLocaleTimeString();
+        }
+      </script>
+    <body>
+  </html>
