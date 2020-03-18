@@ -50,7 +50,7 @@
           var year = date.getFullYear()
 
           document.getElementById("date_time").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day
-            + ', ' + ' ' + year + ', ' + date.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})
+            + ', ' + ' ' + year + ', ' + date.toLocaleTimeString('default', {hour: '2-numeric', minute:'2-digit'})
         }
       </script>
     <body>
