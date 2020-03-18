@@ -11,7 +11,7 @@
           right: 0px;
           z-index: -1;
         }
-        #demo {	
+        #date_time {	
           background: rgb(0, 128, 0);
           font-family: calibri, sans-serif;
           font-variant-numeric: tabular-nums;
@@ -34,7 +34,7 @@
       <p>Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
       I hope you do enjoy them!</p>
 
-      <p id="demo"></p>
+      <p id="date_time"></p>
       <script>
         myTimer()
         var myVar = setInterval(myTimer, 1000);
@@ -49,7 +49,7 @@
           var day = date.getDate()
           var year = date.getFullYear()
 
-          document.getElementById("demo").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day + ', ' + ' ' + year + ', ' + date.toLocaleTimeString();
+          document.getElementById("date_time").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day + ', ' + ' ' + year + ', ' + date.toLocaleTimeString();
         }
       </script>
     <body>
