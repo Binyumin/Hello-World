@@ -47,7 +47,7 @@
           var year = date.getFullYear()
 
           document.getElementById("clock").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day
-            + ', ' + ' ' + year + ', ' + date.toLocaleTimeString('default', {hour: 'numeric', minute:'2-digit'})
+            + ', ' + ' ' + year + ', ' + date.toLocaleTimeString()
         }
         
         let dragger = function(event) {
