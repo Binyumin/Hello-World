@@ -52,7 +52,7 @@
         
         let dragger = function(event) {
           myTimer()
-          var myVar = setInterval(myTimer, 1000)
+          setInterval(myTimer, 1000)
           
           clock.style.top = event.clientY - 20 + "px"
           clock.style.left = event.clientX - 160 + "px"
