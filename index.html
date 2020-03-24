@@ -11,7 +11,7 @@
           right: 0px;
           z-index: -1;
         }
-        #date_time {	
+        #clock {	
           background: rgb(0, 128, 0);
           font-size: 20px;
           font-family: calibri, sans-serif;
@@ -19,8 +19,6 @@
           font-weight: bold;
           color: rgb(255, 36, 0);
           position: fixed;
-          bottom: 0;
-          right: 0;
           border: 5px ridge rgb(128,0,128);
           padding: 1px 4px;
           margin: 3px;
@@ -35,7 +33,7 @@
       <p>Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
       I hope you do enjoy them!</p>
 
-      <p id="date_time"></p>
+      <p id="clock"></p>
       <script>
         myTimer()
         var myVar = setInterval(myTimer, 60000);
@@ -50,7 +48,7 @@
           var day = date.getDate()
           var year = date.getFullYear()
 
-          document.getElementById("date_time").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day
+          document.getElementById("clock").innerHTML = daysArray[weekday] + ', ' + monthsArray[month] + ' ' + day
             + ', ' + ' ' + year + ', ' + date.toLocaleTimeString('default', {hour: 'numeric', minute:'2-digit'})
         }
       </script>
