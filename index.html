@@ -19,6 +19,7 @@
           font-weight: bold;
           color: rgb(255, 36, 0);
           position: fixed;
+          top: 5%;
           border: 5px ridge rgb(128,0,128);
           padding: 1px 4px;
           margin: 3px;
@@ -33,7 +34,7 @@
       <p>Hello visitor, this is my very first website. Here I will post all my interesting (and not so interesting) projects,
       I hope you do enjoy them!</p>
 
-      <p id="clock"></p>
+      <div id="clock"></div>
       <script>
         function myTimer() {
           var date = new Date()
@@ -53,8 +54,8 @@
           myTimer()
           var myVar = setInterval(myTimer, 60000)
           
-          clock.style.top = event.clientY + "px"
-          clock.style.left = event.clientX + "px"
+          clock.style.top = event.clientY - 20 + "px"
+          clock.style.left = event.clientX - 160 + "px"
         }
         
         document.addEventListener("click", dragger)
